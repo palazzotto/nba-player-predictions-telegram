@@ -1,0 +1,1 @@
+source(file.path("r","cache_feature_storiche.R")); x<-data.frame(idGame="g",idPlayer="p",dateGame=as.Date("2026-01-01")); f<-tempfile(fileext=".rds"); scrivi_cache_feature_atomica(x,f); stopifnot(identical(readRDS(f),x)); cat("test_cache_feature_storiche: OK\n")

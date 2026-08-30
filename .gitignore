@@ -1,0 +1,55 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# R and RStudio
+.RData
+.Rhistory
+.Rproj.user/
+*.Rproj
+Rplots.pdf
+
+# Private datasets, caches, models and generated predictions
+*.rds
+*.rda
+*.RData
+data/raw/**
+data/cache/**
+models/**
+output/**
+Cluster/**
+outputs/**
+
+# Keep directory placeholders
+!data/raw/.gitkeep
+!data/cache/.gitkeep
+!models/.gitkeep
+!output/.gitkeep
+
+# Generated reports and local exports
+*.xlsx
+*.xls
+*.csv
+*.json
+*.ndjson
+*.log
+*.html
+*.pdf
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

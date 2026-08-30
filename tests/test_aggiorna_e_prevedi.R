@@ -1,0 +1,7 @@
+source(file.path("r","aggiorna_e_prevedi.R"),local=TRUE)
+stopifnot(inherits(try(leggi_feature_settimanali(as.Date("1999-01-01"),"x",tempfile()),silent=TRUE),"try-error"))
+risultato_fittizio <- list(modelli = stats::setNames(as.list(seq_along(sequenza_target_nba())), sequenza_target_nba()))
+cartella <- tempfile("modelli_")
+percorsi <- pubblica_modelli_bot(risultato_fittizio, as.Date("2026-08-27"), cartella)
+stopifnot(length(percorsi) == 7L, all(file.exists(percorsi)), !any(grepl("punti_rimbalzi_assist", percorsi, fixed = TRUE)))
+cat("test_aggiorna_e_prevedi: OK\n")
