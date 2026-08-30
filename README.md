@@ -380,9 +380,30 @@ for test_file in tests/test_*.R; do Rscript "$test_file"; done
 questi sono disponibili; in una clone priva di dati viene saltato in modo
 esplicito.
 
+## Feedback e contributi
+
+Feedback, segnalazioni e proposte sono benvenuti tramite le
+[GitHub Issues](https://github.com/palazzotto/nba-player-predictions-telegram/issues).
+Chi vuole proporre una modifica può creare un fork e aprire una pull request.
+
+La pubblicazione non concede accesso diretto al ramo `main`: soltanto il
+proprietario e gli eventuali collaboratori autorizzati possono modificarlo.
+Una pull request è una proposta e viene integrata solo dopo l'approvazione del
+proprietario.
+
+## Licenza
+
+Il codice è distribuito con licenza [MIT](LICENSE). È consentito studiarlo,
+usarlo, modificarlo e redistribuirlo, anche in altri progetti, mantenendo
+l'avviso di copyright e il testo della licenza. La licenza non trasferisce il
+controllo di questa repository e il software è fornito senza garanzie.
+
+Dataset, modelli addestrati, output e altri artefatti esclusi dalla repository
+non sono automaticamente coperti dalla licenza di questo codice.
+
 ## Sicurezza e privacy
 
-- mantenere privata la repository se contiene logica o feature proprietarie;
+- rieseguire una scansione dei segreti prima di ogni pubblicazione;
 - verificare `git status` prima di ogni commit;
 - non forzare mai l'aggiunta di file ignorati;
 - ruotare immediatamente un token se compare accidentalmente nella cronologia;
